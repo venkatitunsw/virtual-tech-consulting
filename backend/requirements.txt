@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+langgraph
+litellm
+sqlalchemy
+psycopg2-binary
+pgvector
+redis
+docker
+python-multipart
+websockets
