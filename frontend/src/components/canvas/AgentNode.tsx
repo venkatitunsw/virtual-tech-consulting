@@ -1,8 +1,9 @@
 import React from 'react';
-import { Handle, Position, NodeProps } from '@xyflow/react';
-import { AgentData } from '../../store/canvasStore';
+import { Handle, Position } from '@xyflow/react';
+import type { NodeProps } from '@xyflow/react';
+import type { AgentNode as AgentNodeType } from '../../store/canvasStore';
 
-export function AgentNode({ data, selected }: NodeProps<AgentData>) {
+export function AgentNode({ data, selected }: NodeProps<AgentNodeType>) {
   return (
     <div className={`p-4 rounded-xl border bg-white shadow-md w-64 ${selected ? 'border-blue-500 ring-2 ring-blue-200' : 'border-gray-200'}`}>
       <Handle type="target" position={Position.Top} className="w-3 h-3 bg-blue-400" />
